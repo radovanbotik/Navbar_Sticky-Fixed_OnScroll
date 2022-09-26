@@ -5,7 +5,7 @@ const circle = document.querySelector("#circle");
 let lastScroll = 0;
 const documentTotalHeight = document.body.getBoundingClientRect().height;
 const windowHeight = window.innerHeight;
-const total = documentTotalHeight - windowHeight;
+const actualScrollableArea = documentTotalHeight - windowHeight;
 
 const fixNavigation = () => {
   let currentScroll = window.pageYOffset;
@@ -35,7 +35,9 @@ const fixNavigation = () => {
 const rotateCircle = e => {
   // console.log(window.pageYOffset);
 
-  const percentage = Math.ceil((window.pageYOffset / total) * 100);
+  const percentage = Math.ceil(
+    (window.pageYOffset / actualScrollableArea) * 100
+  );
   // console.log(percentage);
 
   const circlePercentage = (360 / 100) * percentage;
