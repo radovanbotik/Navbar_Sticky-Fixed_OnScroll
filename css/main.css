@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: burlywood;
+  display: grid;
+}
+body header {
+  height: 20vh;
+  background-color: fuchsia;
+}
+body nav {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: yellow;
+  transition: 250ms ease-in-out;
+}
+body ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  justify-content: end;
+}
+body ul .hidden {
+  max-width: 0;
+  overflow: hidden;
+}
+
+main {
+  height: 200vh;
+}
+main p {
+  margin: 0 auto;
+  width: 60ch;
+  text-align: center;
+}
+
+.scroll-down nav {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.324);
+}/*# sourceMappingURL=main.css.map */

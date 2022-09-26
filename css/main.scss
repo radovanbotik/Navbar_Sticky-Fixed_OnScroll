@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// * > * + * {
+//   margin-top: 5vh;
+// }
+
+body {
+  background-color: burlywood;
+  display: grid;
+
+  header {
+    height: 20vh;
+    background-color: fuchsia;
+  }
+
+  nav {
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    transition: 250ms ease-in-out;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    justify-content: end;
+    .hidden {
+      max-width: 0;
+      overflow: hidden;
+      //   transition: all 500ms ease-in;
+    }
+  }
+}
+main {
+  height: 200vh;
+  p {
+    margin: 0 auto;
+    width: 60ch;
+    text-align: center;
+  }
+}
+.scroll-down {
+  nav {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.scroll-up {
+  nav {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.324);
+  }
+}
