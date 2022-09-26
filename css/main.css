@@ -47,4 +47,16 @@ main p {
 
 .scroll-up nav {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.324);
+}
+
+.scroll-measure {
+  width: 150px;
+  aspect-ratio: 1;
+  background-image: url(../assets/images/pissaro.jpg);
+  background-size: cover;
+  position: fixed;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  top: 50%;
+  right: 5%;
 }/*# sourceMappingURL=main.css.map */
