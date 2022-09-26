@@ -10,18 +10,14 @@
 
 body {
   background-color: burlywood;
-  display: grid;
-
-  header {
-    height: 20vh;
-    background-color: fuchsia;
-  }
+  // display: grid;
+  // grid-template-rows: 200vh;
 
   nav {
     position: fixed;
     height: 10vh;
     width: 100%;
-    top: 0;
+    top: 0vh;
     left: 0;
     background-color: yellow;
     transition: 250ms ease-in-out;
@@ -39,6 +35,7 @@ body {
   }
 }
 main {
+  padding-top: 10vh;
   height: 200vh;
   p {
     margin: 0 auto;
